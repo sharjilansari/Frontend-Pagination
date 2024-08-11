@@ -9,8 +9,7 @@ This project demonstrates a simple implementation of pagination in a React appli
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
+- [screenshot](#screenshot)
 
 ## Features
 
@@ -62,7 +61,7 @@ To run this project locally, follow these steps:
 
 ## Project Structure
 
-react-pagination-example/
+pagination/
 ├── public/
 │ ├── index.html
 │ └── ...
