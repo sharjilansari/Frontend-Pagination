@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# React Pagination Example
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project demonstrates a simple implementation of pagination in a React application. The application fetches a list of posts from a public API and allows users to navigate through the posts using pagination.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Fetches posts from a public API (`https://jsonplaceholder.typicode.com/posts`).
+- Implements pagination to navigate through the posts.
+- Displays a loading state while fetching data.
+- Allows users to navigate to the previous or next set of posts using pagination controls.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To run this project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository:**
 
-### `npm run build`
+```bash
+    git clone https://github.com/yourusername/react-pagination-example.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Navigate to the project directory:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+    cd react-pagination-example
+``` 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Install the dependencies:**
 
-### `npm run eject`
+```bash
+    npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Start the development server:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+    npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **Open your browser and navigate to:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    http://localhost:3000
 
-## Learn More
+## Usage
+- Once the application is running, you'll see a list of posts with pagination controls at the bottom. You can click on the page numbers or the "Prev" and "Next" buttons to navigate through the posts.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Example Components
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **App Component**: The main component that manages state and handles fetching posts from the API.
+- **Posts Component**: Displays the list of posts for the current page.
+- **Pagination Component**: Renders pagination controls and handles page navigation.
 
-### Code Splitting
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+react-pagination-example/
+├── public/
+│ ├── index.html
+│ └── ...
+├── src/
+│ ├── components/
+│ │ ├── Posts.js
+│ │ └── Pagination.js
+│ ├── App.css
+│ ├── App.js
+│ ├── index.js
+│ └── ...
+├── package.json
+└── README.md
 
-### Analyzing the Bundle Size
+- `src/components/Posts.js`: Displays the list of posts.
+- `src/components/Pagination.js`: Renders the pagination controls.
+- `src/App.js`: Main application component.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Dependencies
 
-### Making a Progressive Web App
+This project uses the following dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **React**: A JavaScript library for building user interfaces.
+- **Axios**: A promise-based HTTP client for the browser and Node.js.
 
-### Advanced Configuration
+To install these dependencies, use:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+    npm install react axios
+```
 
-### Deployment
+## Screenshot
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Pagination Example](./pagination-screenshot.png)
